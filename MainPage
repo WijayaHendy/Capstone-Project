@@ -1,0 +1,109 @@
+{{#addbodyclass:moodledocs-logo}}
+<div class="navtrail">[https://docs.moodle.org/overview/ Docs overview] ► [[{{PAGENAME}}|Moodle Docs 3.10]]</div>
+
+<div class="card-deck">
+  <div class="card">
+	<div class="card-body">
+  	<h4 class="card-title">Get started</h4>
+  	<p class="card-text">
+* [[Features|Browse features]]
+* [[Teacher quick guide]]
+* [[Admin quick guide]]
+* [[Installation quick guide]]
+  	</p>
+	</div>
+	<div class="card-footer">
+: [[:Category:Quick guide|More quick guides <i class="fa fa-sm fa-arrow-right" aria-hidden="true"></i>]]
+	</div>
+  </div>
+
+  <div class="card">
+	<div class="card-body">
+  	<h4 class="card-title">Manage your course</h4>
+  	<p class="card-text">
+* [[Course homepage|Set up your course]]
+* [[Add students|Add students]]
+* [[Tracking progress|Track progress]]
+* [[Working with files|Upload files]]
+  	</p>
+	</div>
+	<div class="card-footer">
+: [[Managing a Moodle course|More for teachers <i class="fa fa-sm fa-arrow-right" aria-hidden="true"></i>]]
+	</div>
+  </div>
+
+  <div class="card">
+	<div class="card-body">
+  	<h4 class="card-title">Add activities</h4>
+  	<p class="card-text">
+* [[Assignment activity|Use assignments to assess]]
+* [[Forum activity|Discuss in forums]]
+* [[Quiz activity|Test students with a quiz]]
+* [[Workshop activity|Peer-assess with a workshop]]
+  	</p>
+	</div>
+	<div class="card-footer">
+: [[Activities|More activities <i class="fa fa-sm fa-arrow-right" aria-hidden="true"></i>]]
+	</div>
+  </div>
+</div>
+
+<div class="card-deck mt-3">
+  <div class="card">
+	<div class="card-body">
+  	<h4 class="card-title">What's new</h4>
+  	<p class="card-text">
+* [[New for teachers|For teachers]]
+* [[New for students|For students]]
+* [[New for administrators|For admins]]
+* [[New for mobile|Mobile]]
+  	</p>
+	</div>
+	<div class="card-footer">
+: [[New features|New features list <i class="fa fa-sm fa-arrow-right" aria-hidden="true"></i>]]
+	</div>
+  </div>
+
+  <div class="card">
+	<div class="card-body">
+  	<h4 class="card-title">Manage your site</h4>
+  	<p class="card-text">
+* [[Add users|Add users]]
+* [[Adding a new course|Add courses]]
+* [[Site appearance|Change the look and feel]]
+* [[Installing plugins|Install plugins]]
+  	</p>
+	</div>
+	<div class="card-footer">
+: [[Managing a Moodle site|More for administrators <i class="fa fa-sm fa-arrow-right" aria-hidden="true"></i>]]
+	</div>
+  </div>
+
+  <div class="card">
+	<div class="card-body">
+  	<h4 class="card-title">Moodle app</h4>
+  	<p class="card-text">
+* [[Moodle app features|View app features]]
+* [[Moodle app notifications|Keep up-to-date with notifications]]
+* [[Creating Moodle-app-friendly courses|Create mobile-friendly courses]]
+* [[Moodle app additional features|Add more app features]]
+  	</p>
+	</div>
+	<div class="card-footer">
+: [[Moodle app|More about the Moodle app <i class="fa fa-sm fa-arrow-right" aria-hidden="true"></i>]]
+	</div>
+  </div>
+</div>
+
+
+__NOTOC__
+
+[[de:Hauptseite]]
+[[es:Página Principal]]
+[[eu:Azala]]
+[[fr:Accueil]]
+[[hr:Glavna stranica]]
+[[it:Pagina_principale]]
+[[ja:メインページ]]
+[[pt-br:Página_principal]]
+[[zh:首页]]
