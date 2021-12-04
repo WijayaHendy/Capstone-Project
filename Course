@@ -1,0 +1,154 @@
+{{Courses}}
+===Parts of a course homepage===
+
+Watch the screencasts '''[https://youtu.be/ZsNK44EqRkg What is a course?]''' and '''[https://youtu.be/y12xYdGOq0s How to lay out your course]''' for an introduction on setting up your course homepage.
+
+A Moodle course can look very different according to the theme and course format (layout). Here are a blank course page using the [[Boost theme]] and the Classic theme, both with standard weekly format:
+
+ [[File:BoostExampleBlocks.png|thumb|center||600px|Empty course with Boost theme showing  side blocks]]
+
+ [[File:ExampleClassic.png|thumb|600px|center|Empty course with Classic theme]]
+
+
+
+1.[[Navigation block]]
+
+Normally visible on all pages, this block  helps you find your way around the course and site.
+
+2.[[Administration block]]
+
+Again, normally visible on all pages, this block gives different levels of access to teachers and students.
+
+3.[[Course formats|Course sections]]
+
+Here is where the learning materials are displayed. This element may be arranged in one or multiple weeks, topics, forums or other (non-standard) layouts.
+
+4.[[Blocks|Side blocks]]
+
+Which blocks you see depend on what the administrator has selected and what you as teacher choose to add.
+
+5. Navigation drawer
+
+This replaces the [[Navigation block]] and [[Administration block]] in the Boost theme. For course section links to appear, 'Always link course sections' (linkcoursesections) must be enabled by an administrator in the Site administration.
+
+6. Gear menu
+
+This replaces the course administration settings in the Boost theme.
+
+===To edit a course section===
+
+# Turn editing on
+# Click the pencil icon (1 in screenshot below) to quickly rename the section
+# Click the Edit menu (2 in screenshot below) to edit the description and other settings.
+[[File:31editsection.png|thumb|center|600px|Section editing menu]]
+
+If [[Restrict access]] is enabled for the site, access to the section (including all activities and resources within it) may be restricted. 
+
+===To move a course section===
+#Turn editing on
+#Click the up/down arrow or the crosshairs icon to move the section
+#Drag the section to where you want to position it and let go
+
+Note: The ability to move course sections is controlled by the capability [[Capabilities/moodle/course:movesections|moodle/course:movesections]], which is allowed for the default role of teacher.
+===To add course sections===
+#Turn editing on
+#Click  'Add topics/weeks' underneath the bottom section
+#Select the number of extra sections you wish and press 'Add topics/weeks':
+
+[[File:33Addtopics.png|thumb|400px|center|Adding sections]]
+
+===To delete a course section===
+
+With the editing turned on, click the 'Edit' link to the right of the course section you wish to delete and then, from the menu that displays,  click 'X Delete'. You will be prompted to confirm your wish to delete the section and its contents. Note that all activities inside the section and their user data will also be deleted. Use the [[Recycle bin]] to reverse this if you do it by mistake.
+
+===To link course sections===
+
+An admin setting ''Always link course sections'' can be enabled from ''Site administration > Appearance > Navigation'' and will link course sections so that when a course section name is clicked in the navigation block or the central content area, it will go directly to that section.
+
+==Blocks==
+
+Depending on the theme, blocks are displayed in the right and/or left columns of the course page. The [[Boost theme]] only displays blocks on the right, and when using the [[Moodle Mobile app]] blocks do not display at all.
+
+To add a block to the course page
+
+#Turn on the editing from the gear menu of  the button top right depending on your theme.
+#Select a block from the "Add block" link, either at the bottom of the nav drawer on the left or a drop down menu usually on the right.
+
+To move a block
+#Ensure editing is turned on then click onto the block title until the crosshair icon appears
+#While keeping the block selected, drag it to where you want to position it and let go.
+
+Alternatively
+#Click on the up/down arrow
+#Click on the place holder (a zone with a dashed border) where you want the block to appear.
+
+{|
+| [[File:moveblocksnew.png|thumb|Crosshair icon for moving a block]]
+| [[File:Moveblocks.png|thumb|Up/down arrow icon for moving a block]]
+|}
+
+==Activities and resources==
+
+To add an activity or resource to the course
+*Turn on the editing from the button top right.
+
+*Click 'Add an activity or resource' to open the activity chooser. Double-click to add an activity or resource; click the i for more information and click the star icon to add it to a separate, starred tab.
+
+If desired, the activity chooser may be disabled from Course preferences from the [[Preferences]] link in the user menu. This will then display two separate resource and activity dropdown menus.
+
+'''Note:''' The Moodle admin can switch this off by default in ''Administration > Site administration > Appearance > AJAX and Javascript''.
+{|
+| [[File:activity chooser.png|thumb|The activity chooser]]
+|}
+
+Alternatively, certain resources and activities may be added using drag and drop:
+
+*To add a [[File|file]], simply drag and drop it onto the course section where you'd like it to appear
+*To add a [[Folder|folder of files]], simply zip the folder then drag and drop it onto the course section where you'd like it to appear, answer 'Unzip files and create folder' to the popup dialogue, then click the upload button
+*To add a [[SCORM module|SCORM package]], simply drag and drop it onto the course section where you'd like it to appear, answer 'Add a SCORM package' to the popup dialogue, then click the upload button
+
+===Moving between activities===
+Underneath each activity is a link on the left to the previous activity and on the right to the next activity. A jump-to menu also allows you to choose other activities from the course page:
+
+[[File:CHPActivityLinks.png]]
+
+==Editing elements on your course homepage==
+With the editing turned on, activities, resources and blocks will have icons performing different functions such as edit/move/copy/delete/hide.  
+
+''Note:''' ''Your theme may have icons different from these below:''
+
+
+:[[Image:pencil.png]] - the pencil icon allows you to edit inline the title of the resource / activity
+
+:[[Image:26actionicon.png|150px]] - this icon groups actions together for easier editing on smaller screens. Click to reveal the options. 
+
+:[[Image:moveajax24.png]]- the move icon allows you to move items or sections by dragging and dropping. (If you have many activities to scroll through while moving, see the Tips and Tricks section below for a useful suggestion.)
+
+:[[Image:movenoajaz241.png]] - this move icon appears if you don't have Ajax enabled.
+
+:[[File:groups24.png]] - the groups icon allows you to change between no groups or separate/visible groups
+
+:[[Image:movenoajax24.png]] - the move here icon appears when moving a course element without Ajax. Click into the box to re-locate your item. 
+
+:[[File:topicmove24.png]] - the up/down arrows allow you to move course sections up or down and  appear if you do not have Ajax enabled.
+
+==Tips and tricks==
+===Moving items in a course with many activities===
+If you click and drag an activity or resource on a course page which has many items, this might cause you difficulties with "scroll of death" issues. Instead of dragging the activity to move it, click on it. It will display a list of all the items on your page and you just need to click to select where on the course page you want the item to be moved to.
+
+[[File:alternativemovemethod.png|thumb|center|500px]]
+
+*Make your course home page look more like a webpage - see [[Stealth activities]]
+*Activity and resource descriptions can be displayed on the course page just below the link to the activity or resource by clicking the 'Display description on course page' checkbox in the activity or resource settings.
+
+==Course homepage capabilities==
+
+*[[Capabilities/moodle/course:sectionvisibility|Control section visibility]]
+*[[Capabilities/moodle/course:setcurrentsection|Set current section]]
+
+
+
+[[es:Página principal del curso]]
+[[fr:Page d'accueil de cours]]
+[[ja:コースホームページ]]
+[[de:Kursseite]]
