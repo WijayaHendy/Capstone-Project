@@ -1,0 +1,187 @@
+{{Installing Moodle}}
+==Why install additional plugins?==
+
+Plugins enable you to add additional features and functionality to Moodle, such as new activities, new quiz question types, new reports, integrations with other systems and many more. 
+
+Note: Certain hosting solutions, such as [https://moodle.com/cloud/ MoodleCloud], prevent plugins being installed from within Moodle.
+
+==Choosing the best plugins for your site==
+
+Note: It is recommended that you proceed with caution and always try installing these plugins in a local experimental server before installing them in a production server.
+
+* Moodle has a [https://moodle.org/plugins/report/index.php?report=favourites&p=0&l=50&s=favourited&d=DESC list of the most favourite plugins], which might be worth considering for adding to your site :)
+* You can find the plugins with the largest number of downloads in the last three months at [https://moodle.org/plugins/stats.php https://moodle.org/plugins/stats.php]. These are the plugins most likely to be most useful for most sites. It would probably be a good idea to consider them first.
+* You can test and try more than 50 of the most popular Moodle plugins at [http://plugins.moodlebites.com plugins.moodlebites.com]
+* See the [https://moodle.org/mod/forum/discuss.php?d=325804 list of (year 2015) favorite plugins] by Gavin Henrick
+* Moodle has a list of plugins that have received the [https://moodle.org/plugins/browse.php?list=award&id=1 Reviewers' choice award]. These are given by the plugins guardians and reviewers for particularly useful, well coded or otherwise interesting plugins. 
+* If your Moodle site needs assessment beyond the sixteen [https://docs.moodle.org/311/en/Question_types#Standard_question_types standard question types included in Moodle core], see the many (49 in 2017) available [https://docs.moodle.org/311/en/Third-party_question_types third party question types].
+* Special cases:
+** All plugins with ''mobile'' in their name, are related to [https://docs.moodle.org/311/en/Moodle_Mobile mobile devices].
+
+===Elementary school teaching===
+You might consider some plugins for [[Gamification|gamification]], such as the [https://moodle.org/plugins/mod_quizgame Quizventure].
+
+===Plugins for K-12 teaching===
+For [https://en.wikipedia.org/wiki/K%E2%80%9312 K-12] teaching and learning environments, consider these plugins: 
+* [https://moodle.org/plugins/mod_attendance Attendance]
+* [http://bigbluebutton.org/ BigBlueButton]
+* [https://moodle.org/plugins/mod_checklist Checklist]
+* [https://moodle.org/plugins/atto_chemistry Chemistry editor]
+* [https://moodle.org/plugins/mod_choicegroup Group choice]
+* [https://moodle.org/plugins/block_xp Level up!]
+* [https://moodle.org/plugins/mod_quizgame Quizventure]
+* [https://moodle.org/plugins/tinymce_wordcount Word count]
+
+===Plugins for University teaching===
+For universities, there is a [https://docs.moodle.org/311/en/Tertiary_education#Moodle_plugins_by.2Ffor_Universities list of plugins by/for Universities], and a [https://docs.moodle.org/311/en/Tertiary_education#Discipline-specific_plugins link to discipline-specific plugins], which might be worth considering.
+
+== Considerations for production sites (skip if you're just moodling) ==
+
+'''VERY IMPORTANT''' Warning: Please be aware that some plugins have not been reviewed, and the quality and/or suitability for your Moodle site has not been checked. Please be careful. It may not do what you expect, it may have serious security issues or it may even not work at all. This is however improving over time with the evolving new plugins directory system.
+
+* If you have a large site for production purposes consider if you '''really''' need the plugin? More functionality means more things to support, more things to (potentially) go wrong and more things to worry about at upgrade time. 
+* Is the plugin supported and maintained? If something goes wrong can you get support? Will bugs be fixed?
+* If the plugin does not work in a future version of Moodle, what will you do about it?
+* Beware of ''patches'' ([https://moodle.org/plugins/browse.php?list=category&id=38 Moodle Plugins Directory Other category]) ! If a plugin modifies or replaces core files then be very careful. It can only be guaranteed to work with the exact build (version) of Moodle it was created for and is highly unlikely to survive a Moodle upgrade.
+* Look at [https://moodle.org/mod/forum/discuss.php?d=340821#p1373707 this] and [https://moodle.org/mod/forum/discuss.php?d=346296 also this] forum threads of users worried about installing a plugin.
+
+==Installing a plugin==
+
+To install a plugin, its source code must be put (deployed) into the appropriate location inside the Moodle installation directory and the main administration page ''Administration > Site administration > Notifications'' must be visited. There are three ways how the plugin code can be deployed into Moodle.
+
+Plugin code may be deployed from within Moodle, either directly from the Moodle plugins directory or by uploading a ZIP file. The web server process has to have write access to the plugin type folder where the new plugin is to be installed in order to use either of these methods.
+
+Alternatively, a plugin may be deployed manually at the server.
+
+{{Note|Whenever you install or download a plugin from the Moodle plugins directory, it is extremely important that you have correctly chosen your [[Moodle version]]. If you mistakenly download and install the wrong version of a plugin for your Moodle server, this may lead to some serious problems, even freezing of the Moodle site.}} 
+
+===Installing directly from the Moodle plugins directory===
+
+# Login as an admin and go to ''Site administration > Plugins > Install plugins''. (If you can't find this location, then plugin installation is prevented on your site.)
+# Click the button 'Install plugins from Moodle plugins directory'.
+# Select your current [[Moodle version]], then search for a plugin with an Install button, click the Install button, then click Continue.
+# Confirm the installation request
+# Check the plugin validation report
+
+===Installing via uploaded ZIP file===
+
+# Go to the [https://moodle.org/plugins Moodle plugins directory], select your current [[Moodle version]], then choose a plugin with a Download button and download the ZIP file.
+# Login to your Moodle site as an admin and go to ''Administration > Site administration > Plugins > Install plugins''.
+# Upload the ZIP file. You should only be prompted to add extra details (in the Show more section) if your plugin is not automatically detected.
+# If your target directory is not writeable, you will see a warning message.
+# Check the plugin validation report
+
+{|
+| [[File:plugin1.png|thumb|Install plugins]]
+| [[File:add-on package validation.png|thumb|Plugin package validation]]
+|}
+
+===Installing manually at the server===
+
+If you can't deploy the plugin code via the administration web interface, you have to copy it to the server file system manually (e.g. if the web server process does not have write access to the Moodle installation tree to do this for you).
+
+First, establish the correct place in the Moodle code tree for the plugin type. Common locations are:
+
+* /path/to/moodle/theme/ - themes
+* /path/to/moodle/mod/ - activity modules and resources
+* /path/to/moodle/blocks/ - sidebar blocks
+* /path/to/moodle/question/type/ - question types
+* /path/to/moodle/course/format/ - course formats
+* /path/to/moodle/admin/report/ - admin reports
+
+See [[:dev:Plugin types]] for the full list of all plugin types and their locations within the Moodle tree.
+
+# Go to the [https://moodle.org/plugins Moodle plugins directory]; select your current [[Moodle version]], then choose a plugin with a Download button and download the ZIP file.
+# Upload or copy it to your Moodle server.
+# Unzip it in the right place for the plugin type (or follow the plugin instructions). 
+# In your Moodle site (as admin) go to ''Site administration > Notifications'' (you should, for most plugin types, get a message saying the plugin is installed).
+
+Note: The plugin may contain language files.  They'll be found by your Moodle automatically. These language strings can be customized using the standard ''Site administration > Language'' editing interface. If you get a "Database error" when you try to edit your language files, there is a strong chance that the language files included within the downloaded ZIP file of this plugin have a coding problem. If you delete the ''plugin_name/lang/other_language_different_to_English/'' folder with the new language strings and the database error disappears, this is indeed the case. Please notify the plugin maintainer, so that it can be fixed in future releases.
+
+==Troubleshooting==
+
+===Errors===
+
+If you obtain an error, please [[Debugging|turn debugging on]] to obtain additional information about the cause of the error.
+
+;Database error while doing a language customization : May not be related to the [[Language_customisation#Database_error|Language customization]], but rather a problem with a recently installed plugin.
+
+;tool_installaddon/err_curl_exec - cURL error 60 : This suggests problems with the validation of the SSL certificate of the remote (moodle.org) site. This is also a known problem in Moodle Windows 7 servers running the Moodle package for Windows. See [[SSL certificate for moodle.org]] for more info and possible solutions.
+
+===A file permissions error has occurred===
+
+On certain 3.0.x versions, when installing plugins via the administration interface, the Moodle uses the configuration settings <tt>$CFG->directorypermissions</tt> and <tt>$CFG->filepermissions</tt>. If these are not defined explicitly in your config.php, the default value is set automatically to 777 (rwxrwxrwx) for directories and 666 (rw-rw-rw-) for files (see lib/setup.php).
+
+If this default behaviour does not fit your needs and hosting environment, you may wish to specify more strict setting such as
+
+ $CFG->directorypermissions = 02750;
+
+A common error after installing plugins is that when you create an instance of the module and then save and display it, it reports the error, "A file permissions error has occurred. Please check the permissions on the script and the directory it is in and try again." If you get this, the file permissions of the package are mostl likely set to 711 preventing them from running correctly. With your preferred FTP client or via your web hosts control panel, set the file permissions of all the files and directories in the installed module, e.g. /moodle/mod/[myplugin]/ to 755 and then see if you can successfully view the module instance.
+
+===Default exception handler: Error writing to database Debug: Duplicate entry 'en_us-...===
+* These errors are usually caused by a third party plugin. 
+* To find the involved plugin, go to [http://lang.moodle.org http://lang.moodle.org] and use the AMOS tool to find all the strings with the given string identifier.
+* Remove the suspected plugin and check if the error has disappeared. If so, please contact the plugin maintainer and report this issue.
+* Please see [https://moodle.org/mod/forum/discuss.php?d=219504 this forum thread] for known causes and fixes.
+
+===When installing manually===
+
+* Check the file permissions. The web server needs to be able to read the plugin files. If the the rest of Moodle works then try to make the plugin permissions and ownership match. 
+* Did you '''definitely''' unzip or install the plugin in the correct place?
+* Because Moodle scans plugin folders for new plugins you cannot have any other files or folders there. Make sure you deleted the zip file and don't try to rename (for example) an old version of the plugin to some other name - it will break.
+* Make sure the directory name for the plugin is correct. All the names '''have''' to match. If you change the name, then it won't work.
+
+===Obtaining help===
+
+Ask in a forum in [http://moodle.org/course/view.php?id=5 Moodle in English]. Make sure you describe your system (including versions of MySQL, PHP etc.), what you tried and what happened. Copy and paste error messages exactly. Provide the link to the version of the plugin you downloaded (some have very similar names).
+
+==Uninstalling a plugin==
+
+To uninstall a plugin
+# Go to ''Administration> Site Administration > Plugins > Plugins overview'' and click the Uninstall link opposite the plugin you wish to remove
+# Use a file manager to remove/delete the actual plugin directory as instructed, otherwise Moodle will reinstall it next time you access the site administration
+
+==Plugins overview==
+
+[[File:plugins overview.png|thumb|center|400px|Plugins overview highlighting available check button]]
+
+The Plugins overview page in ''Administration > Site Administration > Plugins > Plugins overview'' lists all installed plugins, together with the version number,release, availability (enabled or disabled) and settings link (if applicable).
+
+A 'Check for available updates' button enables admins to quickly check for any updates available for plugins installed on the site (from the [http://moodle.org/plugins plugins directory]). Any updates available are highlighted, with further information and a download link in the notes column opposite the plugin.
+
+===Plugin updating from within Moodle===
+
+An administrator can enable updates deployment in  ''Administration > Site Administration > Server > Update notifications''. Then when updates are available, 'Install this update' buttons are shown on the Plugins overview page. See [[Automatic updates deployment]] for more details.
+
+==Preventing installing plugins from within Moodle==
+
+If required, installing and updating from within Moodle can be prevented by copying the following lines of code from config-dist.php and pasting them in config.php.
+
+<syntaxhighlight lang="php">
+// Use the following flag to completely disable the installation of plugins
+// (new plugins, available updates and missing dependencies) and related
+// features (such as cancelling the plugin installation or upgrade) via the
+// server administration web interface.
+$CFG->disableupdateautodeploy = true;
+</syntaxhighlight>
+
+==See also==
+* [https://moodle.org/mod/forum/discuss.php?d=325804 list of (year 2015) favorite plugins] by Gavin Henrick
+* [[Notifications]] for further details of update notifications
+* [[Plugin Review Criteria]]
+* [[Plugins FAQ]]
+* Moodle in English [http://moodle.org/mod/forum/view.php?id=44 General plugins forum]
+* [[Installing Moodle from Git repository#Installing a contributed extension from its Git repository|Installing a contributed extension from its Git repository]]
+
+For developers:
+
+*[[:dev:Category:Plugins|Plugins developer documentation]]
+*[[:dev:Plugin validation]]
+*[[:dev:On-click add-on installation]]
+
+[[Category:Contributed code]]
+
+[[de:Plugins installieren]]
+[[es:Instalar complementos]]
+[[fr:Installation de plugins]]
+[[it:Installare plugin]]
