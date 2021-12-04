@@ -1,0 +1,66 @@
+Microsoft Windows [Version 10.0.19043.1348]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\USER>ssh LMS@138.91.44.73
+The authenticity of host '138.91.44.73 (138.91.44.73)' can't be established.
+ECDSA key fingerprint is SHA256:Z/FiXyU9ndLp1Z5er48o9cLtcgzWcu5gNwnzfZ/Do3s.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '138.91.44.73' (ECDSA) to the list of known hosts.
+LMS@138.91.44.73's password:
+Permission denied, please try again.
+LMS@138.91.44.73's password:
+Linux E-LearningSystem 4.19.0-18-cloud-amd64 #1 SMP Debian 4.19.208-1 (2021-09-29) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+       ___ _ _                   _
+      | _ |_) |_ _ _  __ _ _ __ (_)
+      | _ \ |  _| ' \/ _` | '  \| |
+      |___/_|\__|_|_|\__,_|_|_|_|_|
+
+  *** Welcome to the Bitnami LMS powered by Moodle(TM) LMS 3.11.4-15 ***
+  *** Documentation:  https://docs.bitnami.com/azure/apps/moodle/    ***
+  ***                 https://docs.bitnami.com/azure/                ***
+  *** Bitnami Forums: https://community.bitnami.com/                 ***
+LMS@E-LearningSystem:~$ Connection to 138.91.44.73 closed by remote host.
+Connection to 138.91.44.73 closed.
+
+C:\Users\USER>ssh LMS@138.91.44.73
+LMS@138.91.44.73's password:
+Linux E-LearningSystem 4.19.0-18-cloud-amd64 #1 SMP Debian 4.19.208-1 (2021-09-29) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+       ___ _ _                   _
+      | _ |_) |_ _ _  __ _ _ __ (_)
+      | _ \ |  _| ' \/ _` | '  \| |
+      |___/_|\__|_|_|\__,_|_|_|_|_|
+
+  *** Welcome to the Bitnami LMS powered by Moodle(TM) LMS 3.11.4-15 ***
+  *** Documentation:  https://docs.bitnami.com/azure/apps/moodle/    ***
+  ***                 https://docs.bitnami.com/azure/                ***
+  *** Bitnami Forums: https://community.bitnami.com/                 ***
+Last login: Fri Dec  3 09:23:08 2021 from 36.80.112.196
+bitnami@E-LearningSystem:~$ ssh elearningsistem.southeastasia.cloudapp.azure.com
+The authenticity of host 'elearningsistem.southeastasia.cloudapp.azure.com (138.91.44.73)' can't be established.
+ECDSA key fingerprint is SHA256:Z/FiXyU9ndLp1Z5er48o9cLtcgzWcu5gNwnzfZ/Do3s.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'elearningsistem.southeastasia.cloudapp.azure.com,138.91.44.73' (ECDSA) to the list of known hosts.
+bitnami@elearningsistem.southeastasia.cloudapp.azure.com's password:
+Permission denied, please try again.
+bitnami@elearningsistem.southeastasia.cloudapp.azure.com's password:
+Permission denied, please try again.
+bitnami@elearningsistem.southeastasia.cloudapp.azure.com's password:
+bitnami@elearningsistem.southeastasia.cloudapp.azure.com: Permission denied (publickey,password).
+bitnami@E-LearningSystem:~$ ssh elearningsistem.southeastasia.cloudapp.azure.com
+bitnami@elearningsistem.southeastasia.cloudapp.azure.com's password:
+Permission denied, please try again.
+bitnami@elearningsistem.southeastasia.cloudapp.azure.com's password:
